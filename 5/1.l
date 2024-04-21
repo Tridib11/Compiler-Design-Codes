@@ -18,5 +18,15 @@ nevertheless {flag=1;}
 %%
 
 int main(){
-  
+  printf("Enter the sentence:\n");
+  yylex();
+  if(flag==0){
+    printf("Simple sentence");
+  }else{
+    printf("Compound Sentence");
+  }
+}
+
+int yywrap(){
+  return 1;
 }
