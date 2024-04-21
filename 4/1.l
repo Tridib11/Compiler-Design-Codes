@@ -7,8 +7,8 @@ int v=0,c=0;
 
 %%
 [ \t\n]+ ;
-[aeiouAEIOU] {v++};
-[^aeiouAEIOU] {c++};
+[aeiouAEIOU] {v++;}
+[^aeiouAEIOU] {c++;}
 %%
 
 int main(){
